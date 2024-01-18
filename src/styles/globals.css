@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+ 
+/*circle farthest-corner at 50% 50% */
+  .deneme { 
+    background: radial-gradient(50% 50% at 50% 50%, rgba(113, 153, 246, 0.15) 0%, rgba(61, 85, 145, 0.00) 100%),
+    url('../../public/stars.svg');  }
+
+    body {
+      @apply bg-spaceB-900 relative min-h-screen overflow-x-hidden;
+      -webkit-tap-highlight-color: transparent;
+    }
