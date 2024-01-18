@@ -75,7 +75,7 @@ export default function Home() {
 {isPlaying && <p className='text-white underline underline-offset-4  font-sans font-bold'>Şarkı oynatılıyor...</p>}
 
 
-      <div className={`mt-8 mx-10 bg-yellow-200 text-green-900 rounded-lg p-4 border-2 border-yellow-400 ${isDarkMode ? 'text-white' : 'text-gray-800'}`}>
+      <div className={`mt-8 mx-10 bg-yellow-200 text-green-900 rounded-lg p-4 border-2 border-yellow-400 `}>
         <p>
          Önce üstekine tıkla şarkı çalsın öyle okumaya devam et. 
          <br/>
